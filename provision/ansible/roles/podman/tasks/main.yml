@@ -1,0 +1,43 @@
+---
+- name: podman packages
+  ansible.builtin.package:
+    name: podman
+    state: present
+  tags:
+    - podman
+    - package
+
+- name: podman group
+  ansible.builtin.group:
+    name: "{{ podman_socket_group_name }}"
+    state: present
+  tags:
+    - podman
+    - group
+
+- name: podman socket config directory
+  ansible.builtin.file:
+    path: /etc/systemd/podman.socket.d
+    state: directory
+    mode: '0740'
+  tags:
+    - podman
+    - socket
+
+- name: podman socket config
+  ansible.builtin.template:
+    src: etc/systemd/podman.socket.d/override.conf.j2
+    dest: /etc/systemd/podman.socket.d/override.conf
+  notify:
+    - podman socket restart
+  tags:
+    - podman
+    - socket
+
+- name: registries configuration
+  ansible.builtin.template:
+    src: etc/containers/registries.conf.j2
+    dest: /etc/containers/registries.conf
+  tags:
+    - podman
+    - registries

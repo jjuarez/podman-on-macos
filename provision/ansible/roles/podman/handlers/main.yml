@@ -1,0 +1,5 @@
+---
+- name: podman socket restart
+  ansible.builtin.service:
+    name: podman.socket
+    state: restarted

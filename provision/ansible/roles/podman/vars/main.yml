@@ -1,0 +1,11 @@
+---
+podman_socket_mode: "0660"
+podman_socket_user: root
+podman_socket_group_name: podman
+podman_group_users:
+  - vagrant
+
+container_registries:
+  - docker.io
+  - us.icr.io
+  - de.icr.io

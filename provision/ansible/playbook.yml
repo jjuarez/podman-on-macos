@@ -1,0 +1,6 @@
+---
+- name: The playbook for the podman-BOX
+  hosts: all
+  become: true
+  roles:
+    - podman

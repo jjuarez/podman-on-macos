@@ -1,0 +1,19 @@
+galaxy_info:
+  author: Javier Juarz
+  description: Just install the basics to work with podman
+  company: IBM Research
+  license: MIT
+  min_ansible_version: 2.1
+
+  platforms:
+    - name: Fedora
+      versions:
+        - 32
+
+  galaxy_tags:
+    - development
+    - tools
+    - containers
+    - podman
+
+dependencies: []
