@@ -1,5 +1,5 @@
 ---
-- name: The playbook for the podman-BOX
+- name: The playbook for the podman-on-macos
   hosts: all
   become: true
   roles:
