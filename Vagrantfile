@@ -8,7 +8,6 @@ Vagrant.configure("2") do |config|
     vb.memory = "1024"
   end
 
-  # config.vm.provision :shell, name: "pre-ansible", path: "provision/shell/pre-ansible.sh"
   config.vm.provision :ansible_local do |ansible|
     ansible.verbose            = "true"
     ansible.config_file        = "provision/ansible/ansible.cfg"
