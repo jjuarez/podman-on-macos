@@ -1,5 +1,6 @@
-unqualified-search-registries = [
+[registries-search]
+registries = [
 {% for registry in container_registries %}
-'{{ registry }}',
+  '{{ registry }}',
 {% endfor %}
 ]
