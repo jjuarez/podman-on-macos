@@ -15,7 +15,7 @@
   <h3 align="center">Vagrant Ansible LAB</h3>
 
   <p align="center">
-    An Quick lab using Vagrant and ansible local!
+    An Quick lab to use podman on macOS!
     <br />
     <a href="https://github.com/jjuarez/podman-on-macos/docs"><strong>Explore the docs »</strong></a>
     <br />
