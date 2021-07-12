@@ -12,7 +12,7 @@
     <img src="docs/images/vagrant-logo-hashicorp.svg" alt="Vagrant Logo" width="300" height="100">
   </a>
 
-  <h3 align="center">Vagrant Ansible LAB</h3>
+  <h3 align="center">podman on macOS LAB</h3>
 
   <p align="center">
     An Quick lab to use podman on macOS!
